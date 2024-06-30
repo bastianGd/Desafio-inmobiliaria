@@ -1,8 +1,8 @@
-const propiedadesAlquiler = [
+const propiedadesVenta = [
   {
     id: 1,
     tituloPropiedad: "Estudio en el centro de la ciudad",
-    imagen: "https://images.unsplash.com/photo-1560185127-6d86a1b1cd7b",
+    imagen: "https://images.unsplash.com/photo-1494526585095-c41746248156?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     descripcion:
       "Estudio cómodo y moderno en pleno centro, ideal para una persona o pareja.",
     ubicacion: "123 Main Street, Anytown, CA 91234",
@@ -10,6 +10,7 @@ const propiedadesAlquiler = [
     banios: 1,
     smoke: false,
     pets: true,
+    precio: 100000,
   },
   {
     id: 2,
@@ -22,6 +23,7 @@ const propiedadesAlquiler = [
     banios: 1,
     smoke: false,
     pets: false,
+    precio: 800000
   },
   {
     id: 3,
@@ -34,6 +36,7 @@ const propiedadesAlquiler = [
     banios: 1,
     smoke: true,
     pets: true,
+    precio: 500000
   },
   {
     id: 4,
@@ -46,11 +49,12 @@ const propiedadesAlquiler = [
     banios: 2,
     smoke: false,
     pets: true,
+    precio: 2000000
   },
   {
     id: 5,
     tituloPropiedad: "Casa rural acogedora",
-    imagen: "https://images.unsplash.com/photo-1600585154340-be6161de5669",
+    imagen: "https://images.unsplash.com/photo-1434082033009-b81d41d32e1c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     descripcion:
       "Casa rural con chimenea y jardín amplio, ideal para una estancia tranquila en el campo.",
     ubicacion: "654 Country Road, Anytown, CA 91234",
@@ -58,5 +62,8 @@ const propiedadesAlquiler = [
     banios: 2,
     smoke: true,
     pets: false,
+    precio: 400000
   },
 ];
+
+export default propiedadesVenta;
