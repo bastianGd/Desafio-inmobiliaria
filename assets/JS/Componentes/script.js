@@ -16,8 +16,8 @@ function mostrarPropiedad(tipoPropiedad, contenedor, limite = 0) {
       tarjeta += crearTarjeta(tipoPropiedad[i]);
     }
   } else {
-    for (let propiedad of tipoPropiedad) {
-      tarjeta += crearTarjeta(propiedad);
+    for (let i of tipoPropiedad) {
+      tarjeta += crearTarjeta(i);
     }
   }
   contenedor.innerHTML = tarjeta;
@@ -28,9 +28,7 @@ function crearTarjeta(propiedad) {
   return `
     <div class="col-md-4 mb-4">
       <div class="card">
-        <img src="${propiedad.imagen}" class="card-img-top" alt="${
-    propiedad.imagen
-  }" />
+        <img src="${propiedad.imagen}" class="card-img-top" alt="${propiedad.imagen}" />
         <div class="card-body">
           <h5 class="card-title">${propiedad.tituloPropiedad}</h5>
           <p class="card-text">${propiedad.descripcion}</p>
